@@ -1,6 +1,6 @@
 const mailer = require("nodemailer");
 
-const MailOptions = mailer.createTransport({
+const Transport = mailer.createTransport({
   service: "gmail",
   auth: {
     user: "sakthiveltest1234@gmail.com",
@@ -13,3 +13,11 @@ var mailoptions = {
   subject: "learning in nodejs",
   text: "email send successfully",
 };
+
+Transport.sendMail(mailoptions, function (err, info) {
+  if (err) {
+    console.log("error", err);
+  } else {
+    console.log("info", info.response);
+  }
+});
