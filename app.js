@@ -13,5 +13,3 @@ var mailoptions = {
   subject: "learning in nodejs",
   text: "email send successfully",
 };
-
-console.log("hello");
