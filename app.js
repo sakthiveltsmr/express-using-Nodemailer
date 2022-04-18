@@ -4,7 +4,7 @@ const Transport = mailer.createTransport({
   service: "gmail",
   auth: {
     user: "sakthiveltest1234@gmail.com",
-    pwd: "Sakthi1234#",
+    pass: "Sakthi1234#",
   },
 });
 var mailoptions = {
